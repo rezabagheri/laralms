@@ -4,5 +4,5 @@
 @component('partials.hero')
     Contact Page
 @endcomponent
-@include('partials.nav')
+
 @endsection

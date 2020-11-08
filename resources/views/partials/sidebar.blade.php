@@ -6,7 +6,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">LaraLMS <sup>2</sup></div>
     </a>
 
     <!-- Divider -->
@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route('Home') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -24,9 +24,29 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Interface
+        Main Menu
     </div>
+    <li class="nav-item">
+        <a href="{{ route('Blog') }}" class="nav-link">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Blog</span></a>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="{{ route('About') }}" class="nav-link">
+            <i class="fas fa-fw fa-table"></i>
+            <span>About</span></a>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="{{ route('Contact') }}" class="nav-link">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Contact</span></a>
+        </a>
+    </li>
 
+    <!-- Divider -->
+    <hr class="sidebar-divider">
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
