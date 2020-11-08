@@ -6,10 +6,20 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <title>Lara LMS</title>
 </head>
-<body>
-    <div class="content">
-        @yield('content')
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        @include('partials.sidebar')
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="content">
+                @include('partials.navbar')
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
     </div>
-
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
