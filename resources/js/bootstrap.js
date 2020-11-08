@@ -1,6 +1,7 @@
 window._ = require('lodash');
 
 import Popper from 'popper.js/dist/umd/popper.js';
+import Easing from 'jquery.easing/jquery.easing';
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -36,7 +37,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 try {
     window.Popper = Popper;
+    window.Easing = Easing;
     window.$ = window.jQuery = require('jquery');
-    window.Popper = Popper;
+    //window.Popper = Popper;
     require('bootstrap');
 } catch (e) {}
