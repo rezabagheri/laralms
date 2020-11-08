@@ -13,9 +13,9 @@ use App\Http\Controllers\FrontEndController;
 |
 */
 
-Route::get('/', [FrontEndController::class,'home'])->name('Home');
-Route::get('/about', [FrontEndController::class,'about'])->name('About');
-Route::get('/contact', [FrontEndController::class,'contact'])->name('Contact');
+Route::get('/', [FrontEndController::class,'page'])->name('Home');
+Route::get('/about', [FrontEndController::class,'page'])->name('About');
+Route::get('/contact', [FrontEndController::class,'page'])->name('Contact');
 // Route::get('/', function () {
 //     return view('pages.home');
 // })->name('Home');
