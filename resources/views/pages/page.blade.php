@@ -2,6 +2,7 @@
 
 @section('content')
     @component('partials.hero')
-        {{ $page_title }}
+        {{ $page->title }}
     @endcomponent
+    <p>{{ $page->content }}</p>
 @endsection

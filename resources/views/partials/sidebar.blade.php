@@ -27,19 +27,19 @@
         Main Menu
     </div>
     <li class="nav-item">
-        <a href="{{ route('Blog') }}" class="nav-link">
+        <a href="/Blog" class="nav-link">
             <i class="fas fa-fw fa-table"></i>
             <span>Blog</span></a>
         </a>
     </li>
     <li class="nav-item">
-        <a href="{{ route('About') }}" class="nav-link">
+        <a href="/About" class="nav-link">
             <i class="fas fa-fw fa-table"></i>
             <span>About</span></a>
         </a>
     </li>
     <li class="nav-item">
-        <a href="{{ route('Contact') }}" class="nav-link">
+        <a href="/Contact" class="nav-link">
             <i class="fas fa-fw fa-table"></i>
             <span>Contact</span></a>
         </a>

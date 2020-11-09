@@ -5,6 +5,4 @@
     @component('partials.hero')
         PLMS
     @endcomponent
-
-
 @endsection
