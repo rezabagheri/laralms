@@ -26,24 +26,14 @@
     <div class="sidebar-heading">
         Main Menu
     </div>
-    <li class="nav-item">
-        <a href="/Blog" class="nav-link">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Blog</span></a>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="/About" class="nav-link">
-            <i class="fas fa-fw fa-table"></i>
-            <span>About</span></a>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a href="/Contact" class="nav-link">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Contact</span></a>
-        </a>
-    </li>
+    @foreach ($pages as $page)
+        <li class="nav-item">
+            <a href="/{{ $page->slug }}" class="nav-link">
+                <i class="fas fa-fw fa-table"></i>
+                <span>{{ $page->title }}</span></a>
+            </a>
+        </li>
+    @endforeach
 
     <!-- Divider -->
     <hr class="sidebar-divider">

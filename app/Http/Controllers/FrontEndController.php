@@ -7,13 +7,9 @@ use App\Models\Page;
 
 class FrontEndController extends Controller
 {
-    public function page( Request $request, $slug )
+    public function page( Page $page )
     {
-        $page = Page::whereSlug($slug)
-                    ->first();
-
         return view('pages.page', compact('page'));
-
     }
 
     public function home()

@@ -12,7 +12,7 @@ use App\Http\Controllers\FrontEndController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get("/{slug}", [FrontEndController::class, 'page']);
+Route::get("/{page}", [FrontEndController::class, 'page']);
 Route::get('/', [FrontEndController::class,'home'])->name('Home');
 
 

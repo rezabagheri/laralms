@@ -9,6 +9,11 @@ class Page extends Model
 {
     use HasFactory;
 
+    public function getRouteKeyName()
+    {
+        return "slug";
+    }
+
     public function scopeWhereSlug( $query, $slug )
     {
         return $query->where('slug', $slug);
