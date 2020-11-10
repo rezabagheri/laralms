@@ -12,15 +12,21 @@ use App\Http\Controllers\FrontEndController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get("/{page}", [FrontEndController::class, 'page']);
-Route::get('/', [FrontEndController::class,'home'])->name('Home');
+Auth::routes();
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('Welcome');
 
+Route::get('/logout', [App\Http\Controllers\FrontEndController::class,'logout'])->name('Logout');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get("/{page}", [App\Http\Controllers\FrontEndController::class, 'page']);
+//Route::get('/', [FrontEndController::class,'home'])->name('Home');
+
+
+
+

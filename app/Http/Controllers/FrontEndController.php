@@ -16,4 +16,10 @@ class FrontEndController extends Controller
     {
         return view('pages.home');
     }
+
+    public function logout()
+    {
+        auth()->logout();
+        return redirect('/');
+    }
 }
