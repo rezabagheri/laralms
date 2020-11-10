@@ -13,6 +13,7 @@
         <div id="content-wrapper" class="d-flex flex-column">
             <div class="content">
                 @include('partials.navbar')
+
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     @yield('content')
